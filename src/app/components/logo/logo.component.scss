@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+
+  .preto {
+    color: #252525;
+    text-decoration: none !important;
+  }
+
+  .branco {
+    color: #f5f5f5;
+    text-decoration: none !important;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      margin: 0 0 0 5px;
+    }
+  }
+
+  .icon-logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  #marca {
+    color: #914EFA;
+  }
+
+}
