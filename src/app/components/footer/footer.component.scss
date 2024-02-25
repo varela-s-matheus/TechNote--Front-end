@@ -9,7 +9,6 @@
   padding: 10px;
 
   .footer-conteudo {
-    padding: 0 10%;
     background-color: #252525;
     border-radius: 15px 15px 0 0;
     display: flex;
@@ -28,6 +27,11 @@
     .redes-sociais {
       display: flex;
       justify-content: center;
+      margin-top: 5%;
+
+      img {
+        padding: 5px;
+      }
     }
 
 
