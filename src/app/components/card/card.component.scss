@@ -1,0 +1,62 @@
+:root {
+  --black: #252525;
+  --blue: #61dbfb;
+  --white: #f5f5f5;
+  --purpple: #914EFA;
+}
+
+.example-card {
+  max-width: 350px;
+  padding: 5px;
+
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .example-header-image {
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      margin: 0px 10px 0px 0px;
+    }
+
+    .header-autor {
+      display: flex;
+      align-items: center;
+      margin: 16px;
+      padding: 0px;
+    }
+
+  }
+
+  .example-margin {
+    margin: 0px 12px;
+  }
+
+  .conteudo-card {
+
+
+  }
+
+  .acoes {
+    display: flex;
+    justify-content: end;
+
+    button {
+      width: 35px;
+      height: 35px;
+      background-color: #914EFA;
+      margin: 5px;
+      box-shadow: #252525;
+    }
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+
+}
+

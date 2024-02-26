@@ -30,33 +30,28 @@
   .opcoes-pagina {
     display: flex;
     align-items: center;
+
   }
 
   .opcoes-pagina div {
     padding: 0 10px;
   }
 
-  .perfil {
-    display: flex;
-    align-items: center;
-    border: none !important;
-    background-color: transparent;
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+
+    button {
+      border-radius: 25%;
+    }
+
+    :hover {
+      background-color: #914EFA;
+      transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s
+    }
   }
 
 }
 
-.opcoes-perfil {
-  display: flex !important;
-  align-items: center;
-}
 
-.opcoes-perfil p {
-  margin: 0px !important;
-  padding: 0 5px;
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-}
 
