@@ -2,12 +2,12 @@
   display: flex;
 
   .preto {
-    color: #252525;
+    color: var(--black);
     text-decoration: none !important;
   }
 
   .branco {
-    color: #f5f5f5;
+    color: var(--white);
     text-decoration: none !important;
   }
 
@@ -17,7 +17,7 @@
     align-items: center;
 
     h1 {
-      margin: 0 0 0 5px;
+      margin: 0px 0px 0px 5px;
     }
   }
 
@@ -27,7 +27,7 @@
   }
 
   #marca {
-    color: #914EFA;
+    color: var(--purpple);
   }
 
 }

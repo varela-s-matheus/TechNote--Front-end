@@ -1,0 +1,79 @@
+<section class="form-note">
+  <h2 class="title">Crie a sua anotação, ideia ou pensamento</h2>
+  <form action="" class="form">
+    <div>
+      <div class="information-notes">
+        <mat-form-field class="example-full-width">
+          <mat-label>Título</mat-label>
+          <input
+          matInput
+          [(ngModel)]="note.titulo"
+          name="titulo"
+          id="titulo"
+          >
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Autor</mat-label>
+          <input
+          matInput
+          [(ngModel)]="note.autor"
+          name="autor"
+          id="autor">
+        </mat-form-field>
+      </div>
+
+      <div class="information-notes">
+        <mat-form-field [color]="colorControl.value!">
+          <mat-label for="estilo">Estilo Card</mat-label>
+          <mat-select
+          [formControl]="colorControl"
+          [(ngModel)]="note.estilo"
+          name="estilo"
+          id="estilo"
+          >
+            <mat-option value="Black">Black</mat-option>
+            <mat-option value="Blue">Blue</mat-option>
+            <mat-option value="Purpple">Purpple</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label for="tipo">Tipo</mat-label>
+          <mat-select
+          [(ngModel)]="note.tipo"
+          name="tipo"
+          id="tipo"
+          >
+            <mat-option value="Anotação">Anotação</mat-option>
+            <mat-option value="Tarefa">Tarefa</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="information-notes">
+        <mat-form-field class="content">
+          <mat-label for="conteudo">Ideia, anotação ou tarefa</mat-label>
+          <textarea
+          matInput
+          [(ngModel)]="note.conteudo"
+          name="conteudo"
+          id="conteudo"
+          >
+          </textarea>
+        </mat-form-field>
+      </div>
+
+      <app-card></app-card>
+
+    </div>
+
+    <div class="button-submit">
+      <button mat-fab extended type="submit">
+        <mat-icon>send</mat-icon>
+        Criar
+      </button>
+    </div>
+
+  </form>
+</section>

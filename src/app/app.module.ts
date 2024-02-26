@@ -11,9 +11,15 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { LogoComponent } from './components/logo/logo.component';
 import { MatButtonModule } from '@angular/material/button';
-import { CardComponent } from './components/card/card.component';
+import { CardComponent } from './components/notes/card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { CreateNoteComponent } from './components/notes/create-note/create-note.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+
 
 
 
@@ -24,7 +30,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     HeaderComponent,
     FooterComponent,
     LogoComponent,
-    CardComponent
+    CardComponent,
+    CreateNoteComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +42,12 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
