@@ -12,25 +12,8 @@
         <a routerLink="">Sobre</a>
       </div>
 
-      <div>
-        <button class="perfil" mat-button [matMenuTriggerFor]="opcoesPerfil">
-          <img class="icon-logo" src="../../../assets/images/menu.png" alt="Imagem perfil">
-        </button>
-
-        <mat-menu #opcoesPerfil="matMenu" >
-          <a href="https://github.com/varela-s-matheus" class="opcoes-perfil" target="_blank" mat-menu-item >
-            <div class="opcoes-perfil">
-              <img class="icon" src="../../../assets/images/github.png" alt="GitHub icon">
-              <p>GitHub</p>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/varela-s-matheus/" class="opcoes-perfil" target="_blank" mat-menu-item >
-            <div class="opcoes-perfil">
-              <img class="icon" src="../../../assets/images/linkedin.png" alt="Linkedin icon">
-              <p>LinkedIn</p>
-            </div>
-          </a>
-        </mat-menu>
+      <div class="example-button-row">
+        <button mat-stroked-button routerLink="/createNote">+</button>
       </div>
     </span>
   </mat-toolbar>

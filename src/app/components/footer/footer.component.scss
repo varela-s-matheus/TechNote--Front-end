@@ -1,16 +1,9 @@
-/* Apenas para controle de cores */
-:root {
-  --black: #252525;
-  --blue: #61dbfb;
-  --white: #f5f5f5;
-}
-
 .footer {
-  padding: 10px;
+  bottom: 0;
+  padding: 0 10px;
 
   .footer-conteudo {
-    padding: 0 10%;
-    background-color: #252525;
+    background-color: var(--black);
     border-radius: 15px 15px 0 0;
     display: flex;
     justify-content: center;
@@ -22,19 +15,17 @@
     }
 
     .container-footer {
-      padding: 10px;
+      padding: 30px;
     }
 
     .redes-sociais {
       display: flex;
       justify-content: center;
+      margin-top: 5%;
+
+      img {
+        padding: 5px;
+      }
     }
-
-
   }
-
-
-
-
-
 }

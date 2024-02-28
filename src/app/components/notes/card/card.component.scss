@@ -1,0 +1,67 @@
+#black {
+  color: var(--white) !important;
+  background-color: var(--black) !important;
+
+  mat-card-subtitle {
+    color: var(--white) !important;
+  }
+}
+
+#purpple {
+  color: var(--black) !important;
+  background-color: var(--purpple) !important;
+  mat-card-subtitle {
+    color: var(--black) !important;
+  }
+}
+
+.example-card {
+  width: 350px;
+  padding: 5px;
+
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .example-header-image {
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      margin: 0px 10px 0px 0px;
+    }
+
+    .header-autor {
+      display: flex;
+      align-items: center;
+      margin: 16px;
+      padding: 0px;
+    }
+
+  }
+
+  .example-margin {
+    margin: 0px 12px;
+  }
+
+  .acoes {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      width: 35px;
+      height: 35px;
+      background-color: var(--purpple);
+      margin: 5px;
+      box-shadow: var(--black)
+    }
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+
+}
+

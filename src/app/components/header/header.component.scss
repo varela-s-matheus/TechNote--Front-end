@@ -1,9 +1,3 @@
-/* Apenas para controle de cores */
-:root {
-  --black: #252525;
-  --blue: #61dbfb;
-}
-
 .header {
   padding: 0 10px;
 
@@ -20,7 +14,7 @@
 
   a {
     text-decoration: none !important;
-    color: #252525;
+    color: var(--black);
   }
 
   .example-spacer {
@@ -30,33 +24,27 @@
   .opcoes-pagina {
     display: flex;
     align-items: center;
+
   }
 
   .opcoes-pagina div {
     padding: 0 10px;
   }
 
-  .perfil {
-    display: flex;
-    align-items: center;
-    border: none !important;
-    background-color: transparent;
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+
+    button {
+      border-radius: 25%;
+    }
+
+    :hover {
+      background-color: var(--purpple);
+      transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s
+    }
   }
-
 }
 
-.opcoes-perfil {
-  display: flex !important;
-  align-items: center;
-}
 
-.opcoes-perfil p {
-  margin: 0px !important;
-  padding: 0 5px;
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-}
 

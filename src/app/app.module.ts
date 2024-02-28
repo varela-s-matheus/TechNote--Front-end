@@ -10,13 +10,28 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { LogoComponent } from './components/logo/logo.component';
+import { MatButtonModule } from '@angular/material/button';
+import { CardComponent } from './components/notes/card/card.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { CreateNoteComponent } from './components/notes/create-note/create-note.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    LogoComponent
+    LogoComponent,
+    CardComponent,
+    CreateNoteComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +39,15 @@ import { LogoComponent } from './components/logo/logo.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
