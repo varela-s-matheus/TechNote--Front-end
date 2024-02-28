@@ -2,7 +2,7 @@
   padding: 3%;
 
   .title {
-    padding-left: 25px;
+    padding-left: 2.5%;
   }
   .form {
     background-color: var(--white);
@@ -22,6 +22,12 @@
 
     .content {
       width: 95%;
+    }
+
+    .card {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
     }
 
     button {

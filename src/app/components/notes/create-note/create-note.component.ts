@@ -10,7 +10,6 @@ import {ThemePalette} from '@angular/material/core';
   styleUrls: ['./create-note.component.scss']
 })
 export class CreateNoteComponent {
-  colorControl = new FormControl('primary' as ThemePalette);
 
   note: Note = {
     titulo: "",

@@ -1,5 +1,22 @@
+#black {
+  color: var(--white) !important;
+  background-color: var(--black) !important;
+
+  mat-card-subtitle {
+    color: var(--white) !important;
+  }
+}
+
+#purpple {
+  color: var(--black) !important;
+  background-color: var(--purpple) !important;
+  mat-card-subtitle {
+    color: var(--black) !important;
+  }
+}
+
 .example-card {
-  max-width: 350px;
+  width: 350px;
   padding: 5px;
 
 

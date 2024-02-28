@@ -1,79 +1,71 @@
 <section class="form-note">
-  <h2 class="title">Crie a sua anotação, ideia ou pensamento</h2>
+  <h1 class="title">Crie a sua anotação, ideia ou pensamento</h1>
+
   <form action="" class="form">
     <div>
       <div class="information-notes">
+
+        <!-- Input de titulo do conteúdo -->
         <mat-form-field class="example-full-width">
-          <mat-label>Título</mat-label>
-          <input
-          matInput
-          [(ngModel)]="note.titulo"
-          name="titulo"
-          id="titulo"
-          >
+          <mat-label for="titulo">Título</mat-label>
+          <input matInput maxlength="50" id="titulo" [(ngModel)]="note.titulo" name="titulo" required>
         </mat-form-field>
 
+        <!-- Input de autor do conteudo -->
         <mat-form-field class="example-full-width">
-          <mat-label>Autor</mat-label>
-          <input
-          matInput
-          [(ngModel)]="note.autor"
-          name="autor"
-          id="autor">
+          <mat-label for="autor">Autor</mat-label>
+          <input matInput maxlength="25" id="autor" [(ngModel)]="note.autor" name="autor" required>
         </mat-form-field>
+
       </div>
 
       <div class="information-notes">
-        <mat-form-field [color]="colorControl.value!">
+
+        <!-- Input de estilo do card -->
+        <mat-form-field>
           <mat-label for="estilo">Estilo Card</mat-label>
-          <mat-select
-          [formControl]="colorControl"
-          [(ngModel)]="note.estilo"
-          name="estilo"
-          id="estilo"
-          >
-            <mat-option value="Black">Black</mat-option>
-            <mat-option value="Blue">Blue</mat-option>
-            <mat-option value="Purpple">Purpple</mat-option>
+          <mat-select id="estilo" [(ngModel)]="note.estilo" name="estilo" required>
+            <mat-option value="black">Black</mat-option>
+            <mat-option value="white">White</mat-option>
+            <mat-option value="purpple">Purpple</mat-option>
           </mat-select>
         </mat-form-field>
 
+        <!-- Input do tipo a ser criado -->
         <mat-form-field>
           <mat-label for="tipo">Tipo</mat-label>
-          <mat-select
-          [(ngModel)]="note.tipo"
-          name="tipo"
-          id="tipo"
-          >
-            <mat-option value="Anotação">Anotação</mat-option>
-            <mat-option value="Tarefa">Tarefa</mat-option>
+          <mat-select id="tipo" [(ngModel)]="note.tipo" name="tipo" required>
+            <mat-option value="anotação">Anotação</mat-option>
+            <mat-option value="tarefa">Tarefa</mat-option>
           </mat-select>
         </mat-form-field>
+
       </div>
 
+      <!-- Input de conteudo -->
       <div class="information-notes">
         <mat-form-field class="content">
           <mat-label for="conteudo">Ideia, anotação ou tarefa</mat-label>
-          <textarea
-          matInput
-          [(ngModel)]="note.conteudo"
-          name="conteudo"
-          id="conteudo"
-          >
-          </textarea>
+          <textarea matInput id="conteudo" [(ngModel)]="note.conteudo" name="conteudo" required></textarea>
         </mat-form-field>
       </div>
 
-      <app-card></app-card>
+      <!-- Prévia card de anotações -->
+      <h2 class="title">Prévia:</h2>
+
+      <div class="card">
+        <app-card [note]="note"></app-card>
+      </div>
 
     </div>
 
     <div class="button-submit">
+
       <button mat-fab extended type="submit">
         <mat-icon>send</mat-icon>
         Criar
       </button>
-    </div>
 
+    </div>
   </form>
 </section>
