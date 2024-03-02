@@ -18,4 +18,7 @@ export class ListNotesComponent {
       this.noteList = noteList
     })
   }
+
+  isEmpty: boolean = this.noteList.length == 0;
+
 }

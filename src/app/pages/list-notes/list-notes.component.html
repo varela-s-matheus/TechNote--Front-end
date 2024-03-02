@@ -4,9 +4,15 @@
 
   <section class="container-content" id="row">
     <div>
+
+      <div class="isEmpty" *ngIf="isEmpty">
+        <button mat-stroked-button routerLink="/createNote">Criar</button>
+      </div>
+
       <div *ngFor="let note of noteList" class="note-list" id="column">
         <app-card [note]="note"></app-card>
       </div>
+
     </div>
   </section>
 </main>
