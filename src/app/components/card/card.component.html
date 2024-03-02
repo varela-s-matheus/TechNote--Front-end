@@ -1,10 +1,10 @@
-<mat-card class="example-card" id="{{ note.estilo }}">
+<mat-card id="{{ note.style }}" class="example-card">
   <section class="card-header">
-    <mat-card-header class="header-autor">
-      <img src="../../../../assets/images/perfil-{{ note.estilo }}.png" alt="Foto Perfil" mat-card-avatar class="example-header-image">
+    <mat-card-header class="header-author">
+      <img src="../../../../assets/images/perfil-{{ note.style }}.png" alt="Foto Perfil" mat-card-avatar class="example-header-image">
       <div>
-        <mat-card-title>{{ note.titulo }}</mat-card-title>
-        <mat-card-subtitle>{{ note.autor }}</mat-card-subtitle>
+        <mat-card-title>{{ note.title }}</mat-card-title>
+        <mat-card-subtitle>{{ note.author }}</mat-card-subtitle>
       </div>
     </mat-card-header>
 
@@ -14,9 +14,9 @@
   </section>
 
   <mat-card-content>
-    <p class="conteudo-card">{{ note.conteudo }}</p>
+    <p class="conteudo-card">{{ note.content }}</p>
   </mat-card-content>
-  <mat-card-actions class="acoes">
+  <mat-card-actions class="actions">
     <div class="example-button-container">
       <button mat-fab>
         <mat-icon>edit</mat-icon>

@@ -1,0 +1,12 @@
+<main class="container">
+
+  <h1>Suas ideia, notas e tarefas estão te aguardando:</h1>
+
+  <section class="container-content" id="row">
+    <div>
+      <div *ngFor="let note of noteList" class="note-list" id="column">
+        <app-card [note]="note"></app-card>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,8 +1,5 @@
-import { Note } from './../Note';
+import { Note } from '../../services/note/Note';
 import { Component } from '@angular/core';
-import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {ThemePalette} from '@angular/material/core';
-
 
 @Component({
   selector: 'app-create-note',
@@ -12,11 +9,11 @@ import {ThemePalette} from '@angular/material/core';
 export class CreateNoteComponent {
 
   note: Note = {
-    titulo: "",
-    conteudo: "",
-    autor: "",
-    estilo: "",
-    tipo: ""
+  title: "",
+  content: "",
+  author: "",
+  style: "",
+  type: ""
   }
 
 }

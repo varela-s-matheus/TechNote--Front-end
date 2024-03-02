@@ -1,4 +1,4 @@
-import { Note } from './../Note';
+import { Note } from '../../services/note/Note';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -10,15 +10,15 @@ export class CardComponent {
 
   @Input() note: Note = {
     id: 0,
-    titulo: "",
-    conteudo: "",
-    autor: "",
-    estilo: "white",
-    tipo: ""
+    title: "",
+    content: "",
+    author: "",
+    style: "",
+    type: ""
   }
 
   checkMark(): boolean {
-    if (this.note.tipo == "tarefa") {
+    if (this.note.type == "tarefa") {
       return true;
     }else {
       return false;

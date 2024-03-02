@@ -8,3 +8,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   --white: #f5f5f5;
   --purpple: #914EFA;
 }
+
+.container {
+  padding: 3%;
+
+  .container-content {
+    background-color: #f5f5f5;
+    padding: 5%;
+    border-radius: 30px;
+  }
+}
