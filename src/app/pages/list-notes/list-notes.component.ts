@@ -19,6 +19,11 @@ export class ListNotesComponent {
     })
   }
 
-  isEmpty: boolean = this.noteList.length == 0;
-
+  isEmpty(): boolean {
+    if(this.noteList.length == 0){
+      return true;
+    }else {
+      return false;
+    }
+  }
 }
