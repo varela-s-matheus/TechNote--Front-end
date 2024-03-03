@@ -15,4 +15,9 @@ export class NotesService {
   list(): Observable<Note[]> {
     return this.http.get<Note[]>(this.NOTE_API);
   }
+
+  delete(id: number): Observable<Note> {
+    return this.http
+      .delete<Note>(`${this.NOTE_API}/${id}`);
+  }
 }

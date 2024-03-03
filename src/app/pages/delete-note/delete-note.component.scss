@@ -1,0 +1,22 @@
+.modal {
+
+
+  .item {
+    color: var(--purpple);
+  }
+
+  mat-dialog-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+
+    button {
+      border-radius: 15px;
+    }
+    #mark {
+      background-color: var(--purpple);
+    }
+  }
+
+}

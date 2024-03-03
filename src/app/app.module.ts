@@ -21,6 +21,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { ListNotesComponent } from './pages/list-notes/list-notes.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DeleteNoteComponent } from './pages/delete-note/delete-note.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 @NgModule({
@@ -32,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     CardComponent,
     CreateNoteComponent,
     ListNotesComponent,
+    DeleteNoteComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     MatInputModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

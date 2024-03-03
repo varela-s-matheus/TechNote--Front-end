@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class CreateNoteComponent {
 
   note: Note = {
+  id: 0,
   title: "",
   content: "",
   author: "",
