@@ -1,6 +1,6 @@
 # TechNoteFrontEnd
 
-## Progress of de project: 75%
+## Project progress: 75%
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
