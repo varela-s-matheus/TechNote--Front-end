@@ -4,62 +4,50 @@
 
 .container{
 
-  .container-content {
+  .isEmpty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    .isEmpty {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      button {
-        border-radius: 25px;
-        background-color: var(--purpple);
-        height: 45px;
-        width: 200px;
-      }
+    button {
+      border-radius: 25px;
+      background-color: var(--purpple);
+      height: 45px;
+      width: 200px;
     }
+  }
 
+  .note-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    app-card {
+      width: 23%;
+      margin: 1%;
+    }
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 765px) {
+    #column {
+      width: 100% !important;
+      display: block;
+      margin-bottom: 0 10px;
+    }
+  }
+
+  @media screen and (max-width: 1225px) {
     .note-list {
       width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
       app-card {
-        width: 25%;
+        width: 48%;
         margin: 1%;
       }
     }
-
-    /* Float four columns side by side */
-    #column {
-      float: left;
-      width: 25%;
-      padding: 0 10px;
-    }
-
-    /* Remove extra left and right margins, due to padding */
-    #row {margin: 0 -5px;}
-
-    /* Clear floats after the columns */
-    #row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Responsive columns */
-    @media screen and (max-width: 600px) {
-      #column {
-        width: 100% !important;
-        display: block;
-        margin-bottom: 0 10px;
-      }
-    }
-
-    @media screen and (max-width: 1225px) {
-      #column {
-        width: 50%;
-        display: block;
-        margin-bottom: 0 10px;
-      }
-    }
-
   }
+
 }

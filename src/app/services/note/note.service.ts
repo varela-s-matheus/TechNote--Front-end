@@ -1,5 +1,5 @@
+import { Note } from 'src/app/services/note/Note';
 import { Injectable } from '@angular/core';
-import { Note } from './Note';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -19,5 +19,9 @@ export class NotesService {
   delete(id: number): Observable<Note> {
     return this.http
       .delete<Note>(`${this.NOTE_API}/${id}`);
+  }
+
+  create(note: Note): Observable<Note> {
+    return this.http.post<Note>(this.NOTE_API, note);
   }
 }

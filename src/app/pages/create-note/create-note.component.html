@@ -1,20 +1,21 @@
 <section class="container">
   <h1 class="title">Crie a sua anotação, ideia ou pensamento</h1>
 
-  <form action="" class="container-content">
+  <form class="container-content" [formGroup]="formNote" onformchange="noteFormValue()" (ngSubmit)="submit()">
     <div>
       <div class="information-notes">
 
         <!-- Input de titulo do conteúdo -->
         <mat-form-field class="example-full-width">
           <mat-label for="title">Título</mat-label>
-          <input matInput maxlength="50" id="title" [(ngModel)]="note.title" name="title" required>
+          <input matInput maxlength="50" id="title" required formControlName="title">
         </mat-form-field>
+
 
         <!-- Input de autor do conteudo -->
         <mat-form-field class="example-full-width">
           <mat-label for="author">Autor</mat-label>
-          <input matInput maxlength="25" id="author" [(ngModel)]="note.author" name="author" required>
+          <input matInput maxlength="25" id="author" required formControlName="author">
         </mat-form-field>
 
       </div>
@@ -24,7 +25,7 @@
         <!-- Input de estilo do card -->
         <mat-form-field>
           <mat-label for="style">Estilo Card</mat-label>
-          <mat-select id="style" [(ngModel)]="note.style" name="style" required>
+          <mat-select id="style" required formControlName="style">
             <mat-option value="black">Black</mat-option>
             <mat-option value="white">White</mat-option>
             <mat-option value="purpple">Purpple</mat-option>
@@ -34,7 +35,7 @@
         <!-- Input do tipo a ser criado -->
         <mat-form-field>
           <mat-label for="type">Tipo</mat-label>
-          <mat-select id="type" [(ngModel)]="note.type" name="type" required>
+          <mat-select id="type" required formControlName="type">
             <mat-option value="anotação">Anotação</mat-option>
             <mat-option value="tarefa">Tarefa</mat-option>
           </mat-select>
@@ -46,7 +47,7 @@
       <div class="information-notes">
         <mat-form-field class="content">
           <mat-label for="content">Ideia, anotação ou tarefa</mat-label>
-          <textarea matInput id="content" [(ngModel)]="note.content" name="content" required></textarea>
+          <textarea matInput id="content" required formControlName="content"></textarea>
         </mat-form-field>
       </div>
 
@@ -54,14 +55,14 @@
       <h2 class="title">Prévia:</h2>
 
       <div class="card">
-        <app-card [note]="note"></app-card>
+        <app-card [note]="formNote.value"></app-card>
       </div>
 
     </div>
 
     <div class="button-submit">
 
-      <button mat-fab extended type="submit">
+      <button mat-fab extended type="submit" [disabled]="!formNote.valid">
         <mat-icon>send</mat-icon>
         Criar
       </button>

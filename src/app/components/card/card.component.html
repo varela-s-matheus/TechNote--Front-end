@@ -1,4 +1,4 @@
-<mat-card id="{{ note.style }}" class="example-card">
+<mat-card id="{{ note.style }}" class="example-card {{ size }}">
   <section class="card-header">
     <mat-card-header class="header-author">
       <img src="../../../../assets/images/perfil-{{ note.style }}.png" alt="Foto Perfil" mat-card-avatar class="example-header-image">
@@ -13,9 +13,12 @@
     </div>
   </section>
 
-  <mat-card-content>
-    <p class="conteudo-card">{{ note.content }}</p>
-  </mat-card-content>
+  <div class="card-content">
+    <mat-card-content>
+      <p class="conteudo-card" ngClass="sizeCard()">{{ note.content }}</p>
+    </mat-card-content>
+  </div>
+
   <mat-card-actions class="actions">
     <div class="example-button-container">
       <button mat-fab>

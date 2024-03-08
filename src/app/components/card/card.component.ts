@@ -29,6 +29,14 @@ export class CardComponent {
     }
   }
 
+  size: string = "size-p";
+
+  sizeCard() {
+    if(this.note.content.length >= 220) {
+      this.size = "size-g"
+    }
+  }
+
 
   openDialog(): void {
     const modal = this.dialog.open(DeleteNoteComponent, {

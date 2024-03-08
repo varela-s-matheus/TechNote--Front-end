@@ -23,6 +23,7 @@ import { ListNotesComponent } from './pages/list-notes/list-notes.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DeleteNoteComponent } from './pages/delete-note/delete-note.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { UpdateNoteComponent } from './pages/update-note/update-note.component';
 
 
 
@@ -36,6 +37,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     CreateNoteComponent,
     ListNotesComponent,
     DeleteNoteComponent,
+    UpdateNoteComponent,
   ],
   imports: [
     BrowserModule,

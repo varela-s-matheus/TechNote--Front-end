@@ -16,10 +16,29 @@
   }
 }
 
+.card-content {
+  display: flex;
+}
+
+.size-p {
+  width: 25%;
+  padding: 5px;
+  display: flex;
+  min-height: 15rem;
+  justify-content: space-between;
+}
+
+.size-g {
+  width: 50%;
+  padding: 5px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .example-card{
   width: 100%;
   padding: 5px;
-
 
   .card-header {
     display: flex;
