@@ -11,16 +11,19 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { LogoComponent } from './components/logo/logo.component';
 import { MatButtonModule } from '@angular/material/button';
-import { CardComponent } from './components/notes/card/card.component';
+import { CardComponent } from './components/card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { CreateNoteComponent } from './components/notes/create-note/create-note.component';
+import { CreateNoteComponent } from './pages/create-note/create-note.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-
-
+import { ListNotesComponent } from './pages/list-notes/list-notes.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DeleteNoteComponent } from './pages/delete-note/delete-note.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { UpdateNoteComponent } from './pages/update-note/update-note.component';
 
 
 
@@ -31,7 +34,10 @@ import { MatSelectModule } from '@angular/material/select';
     FooterComponent,
     LogoComponent,
     CardComponent,
-    CreateNoteComponent
+    CreateNoteComponent,
+    ListNotesComponent,
+    DeleteNoteComponent,
+    UpdateNoteComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +53,9 @@ import { MatSelectModule } from '@angular/material/select';
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

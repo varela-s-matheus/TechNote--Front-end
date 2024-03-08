@@ -1,0 +1,18 @@
+<main class="container">
+
+  <h1>Suas ideia, notas e tarefas estão te aguardando:</h1>
+
+  <section class="container-content row">
+    <div>
+
+      <div class="isEmpty" *ngIf="isEmpty()">
+        <button mat-stroked-button routerLink="/createNote">Criar</button>
+      </div>
+
+      <span  class="note-list" id="column">
+        <app-card *ngFor="let note of noteList" [note]="note"></app-card>
+      </span>
+
+    </div>
+  </section>
+</main>

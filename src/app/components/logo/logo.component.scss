@@ -1,12 +1,12 @@
 .logo {
   display: flex;
 
-  .preto {
+  .font-Logo{
     color: var(--black);
     text-decoration: none !important;
   }
 
-  .branco {
+  #white {
     color: var(--white);
     text-decoration: none !important;
   }
@@ -26,7 +26,7 @@
     height: 35px;
   }
 
-  #marca {
+  #mark {
     color: var(--purpple);
   }
 
