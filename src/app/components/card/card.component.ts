@@ -1,7 +1,8 @@
-import { DeleteNoteComponent } from 'src/app/pages/delete-note/delete-note.component';
 import { Note } from '../../services/note/Note';
 import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ModalConfirmationComponent } from '../modal-confirmation/modal-confirmation.component';
+import { FormNoteComponent } from 'src/app/pages/form-note/form-note.component';
 
 @Component({
   selector: 'app-card',
@@ -29,17 +30,12 @@ export class CardComponent {
     }
   }
 
-  size: string = "size-p";
-
-  sizeCard() {
-    if(this.note.content.length >= 220) {
-      this.size = "size-g"
-    }
+  options(): boolean {
+    return this.note.id == 0;
   }
 
-
   openDialog(): void {
-    const modal = this.dialog.open(DeleteNoteComponent, {
+    const modal = this.dialog.open(ModalConfirmationComponent, {
       width: '250px',
     });
     modal.componentInstance.note = this.note;

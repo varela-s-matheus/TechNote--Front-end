@@ -14,16 +14,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { CardComponent } from './components/card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { CreateNoteComponent } from './pages/create-note/create-note.component';
+import { FormNoteComponent } from './pages/form-note/form-note.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { ListNotesComponent } from './pages/list-notes/list-notes.component';
 import { HttpClientModule } from '@angular/common/http';
-import { DeleteNoteComponent } from './pages/delete-note/delete-note.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { UpdateNoteComponent } from './pages/update-note/update-note.component';
+import { ModalConfirmationComponent } from './components/modal-confirmation/modal-confirmation.component';
 
 
 
@@ -34,10 +33,9 @@ import { UpdateNoteComponent } from './pages/update-note/update-note.component';
     FooterComponent,
     LogoComponent,
     CardComponent,
-    CreateNoteComponent,
+    FormNoteComponent,
     ListNotesComponent,
-    DeleteNoteComponent,
-    UpdateNoteComponent,
+    ModalConfirmationComponent,
   ],
   imports: [
     BrowserModule,

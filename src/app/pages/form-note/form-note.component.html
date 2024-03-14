@@ -1,7 +1,7 @@
 <section class="container">
   <h1 class="title">Crie a sua anotação, ideia ou pensamento</h1>
 
-  <form class="container-content" [formGroup]="formNote" onformchange="noteFormValue()" (ngSubmit)="submit()">
+  <form class="container-content" [formGroup]="formNote" *ngIf="formNote" onformchange="noteFormValue()" (ngSubmit)="submit()">
     <div>
       <div class="information-notes">
 
