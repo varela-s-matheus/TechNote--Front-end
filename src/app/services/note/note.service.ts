@@ -12,8 +12,12 @@ export class NotesService {
 
   constructor(private http: HttpClient) { }
 
-  list(): Observable<Note[]> {
+  findAll(): Observable<Note[]> {
     return this.http.get<Note[]>(this.NOTE_API);
+  }
+
+  findById(id: number): Observable<Note> {
+    return this.http.get<Note>(`${this.NOTE_API}/${id}`);
   }
 
   delete(id: number): Observable<Note> {

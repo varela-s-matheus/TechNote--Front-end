@@ -14,7 +14,7 @@ export class ListNotesComponent {
   constructor(private service: NotesService) {  }
 
   ngOnInit(): void {
-    this.service.list().subscribe((noteList) => {
+    this.service.findAll().subscribe((noteList) => {
       this.noteList = noteList
     })
   }
