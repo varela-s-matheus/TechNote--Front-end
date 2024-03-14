@@ -1,6 +1,11 @@
 # TechNoteFrontEnd
 
-## Project progress: 75%
+## Project progress: 95%
+
+-- Próximos passos:
+  1. Implementar função de tarefa realizada;
+  2. Realizar Code review;
+  3. Verificar implementação de testes unitários;
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
