@@ -1,13 +1,22 @@
-# TechNoteFrontEnd
+# Front-end da Aplicação MVC de Notas Informativas - TechNote
+
+<p>Bem-vindo ao README do front-end da nossa aplicação de notas informativas! 
+  Neste documento, você encontrará uma visão geral do front-end, incluindo suas tecnologias utilizadas.
+  O Back-end da desta aplicação se encontra <a href="https://github.com/varela-s-matheus/TechNote--Back-end">aqui</a>, junto ao passo a passo para conexão com o Banco de dados PostgreSQL, caso queira verificar, 
+</p>
+  
+## Visão Geral
+
+<p>Front-end de uma aplicação Web para criação, atualização e manipulação de notas informativas, para ser utilizado como mural de ideias. 
+  Forma de visualizar pensamentos e conceitos sobre determinados assuntos.</p>
 
 ## Project progress: 95%
 
--- Próximos passos:
+### Próximos passos:
   1. Implementar função de tarefa realizada;
   2. Realizar Code review;
   3. Verificar implementação de testes unitários;
-
-
+<br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
 
 ## Development server
