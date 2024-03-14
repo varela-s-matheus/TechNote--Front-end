@@ -23,30 +23,8 @@
     flex-wrap: wrap;
 
     app-card {
-      width: 23%;
-      margin: 1%;
-    }
-  }
-
-  /* Responsive columns */
-  @media screen and (max-width: 765px) {
-    #column {
-      width: 100% !important;
-      display: block;
-      margin-bottom: 0 10px;
-    }
-  }
-
-  @media screen and (max-width: 1225px) {
-    .note-list {
       width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-
-      app-card {
-        width: 48%;
-        margin: 1%;
-      }
+      margin: 1%;
     }
   }
 

@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CreateNoteComponent } from './pages/create-note/create-note.component';
+import { FormNoteComponent } from './pages/form-note/form-note.component';
 import { ListNotesComponent } from './pages/list-notes/list-notes.component';
-import { UpdateNoteComponent } from './pages/update-note/update-note.component';
 
 const routes: Routes = [
   {
@@ -12,7 +11,7 @@ const routes: Routes = [
   },
   {
     path: 'createNote',
-    component: CreateNoteComponent
+    component: FormNoteComponent
   },
   {
     path: 'listNotes',
@@ -20,7 +19,7 @@ const routes: Routes = [
   },
   {
     path: 'updateNote/:id',
-    component: UpdateNoteComponent
+    component: FormNoteComponent
   }
 ];
 
