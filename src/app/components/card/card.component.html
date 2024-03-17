@@ -9,13 +9,13 @@
     </mat-card-header>
 
     <div *ngIf="checkMark()" class="example-section">
-      <mat-checkbox class="example-margin"></mat-checkbox>
+      <mat-checkbox (change)="completeTask()" checked="{{ note.status }}" class="example-margin"></mat-checkbox>
     </div>
   </section>
 
   <div class="card-content">
     <mat-card-content>
-      <p class="conteudo-card">{{ note.content }}</p>
+      <p class="conteudo-card {{ checkBox }}">{{ note.content }}</p>
     </mat-card-content>
   </div>
 

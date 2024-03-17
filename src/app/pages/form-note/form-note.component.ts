@@ -41,8 +41,16 @@ export class FormNoteComponent implements OnInit{
       content: [note.content, Validators.maxLength(1000)],
       author: [note.author, Validators.required],
       style: [note.style, Validators.required],
-      type: [note.type, Validators.required]
+      type: [note.type, Validators.required],
+      status: [note.status]
     })
+  }
+
+  updateNote(note: Note) {
+    this.createFormNote(note);
+    this.service.update(this.formNote.value).subscribe(() => {
+      this.router.navigate(['/listNotes'])
+    });
   }
 
   submit() {
@@ -58,7 +66,5 @@ export class FormNoteComponent implements OnInit{
       });
     }
   }
-
-
 
 }

@@ -28,4 +28,8 @@ export class NotesService {
   create(note: Note): Observable<Note> {
     return this.http.post<Note>(this.NOTE_API, note);
   }
+
+  update(note: Note) {
+    return this.http.put<Note>(`${this.NOTE_API}/${note.id}`, note);
+  }
 }
