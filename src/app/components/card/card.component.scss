@@ -9,15 +9,20 @@
 }
 
 #purpple {
-  color: var(--black) !important;
+  color: var(--white) !important;
   background-color: var(--purpple) !important;
   mat-card-subtitle {
-    color: var(--black) !important;
+    color: var(--white) !important;
   }
 }
 
 .card-content {
   display: flex;
+
+  .isComplete {
+    text-decoration: line-through;
+    color: rgb(134, 134, 134);
+  }
 }
 
 .example-card{

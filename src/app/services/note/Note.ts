@@ -6,6 +6,7 @@ export class Note {
   style: string = "";
   type: string = "";
   dateNote?: Date;
+  status: boolean = false;
 }
 
 
@@ -17,4 +18,5 @@ export interface Note {
   style: string;
   type: string;
   dateNote?: Date;
+  status: boolean;
 }
