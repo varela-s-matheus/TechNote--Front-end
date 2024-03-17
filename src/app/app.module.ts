@@ -23,6 +23,9 @@ import { ListNotesComponent } from './pages/list-notes/list-notes.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ModalConfirmationComponent } from './components/modal-confirmation/modal-confirmation.component';
+import { AboutProjectComponent } from './pages/about-project/about-project.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+
 
 
 
@@ -36,6 +39,7 @@ import { ModalConfirmationComponent } from './components/modal-confirmation/moda
     FormNoteComponent,
     ListNotesComponent,
     ModalConfirmationComponent,
+    AboutProjectComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +57,8 @@ import { ModalConfirmationComponent } from './components/modal-confirmation/moda
     MatInputModule,
     MatSelectModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

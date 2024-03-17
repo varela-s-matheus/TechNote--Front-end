@@ -1,0 +1,23 @@
+.container-content {
+
+  .icon {
+    width: 25px;
+    margin: 5px;
+  }
+
+  .paragraph {
+    margin: 2% 0 2% 0;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+
+    button {
+      border-radius: 25px;
+      background-color: var(--purpple);
+      height: 45px;
+      width: 200px;
+    }
+  }
+}
