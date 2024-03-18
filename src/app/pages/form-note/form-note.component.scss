@@ -44,8 +44,22 @@
     align-items: flex-start;
   }
 
-  .example-container mat-form-field + mat-form-field {
-    margin-left: 8px;
+
+  @media screen and (max-width: 600px) {
+    .container-content{
+      display: block;
+
+      .information-notes {
+        display: block;
+        margin: 2%;
+
+        mat-form-field {
+          display: flex;
+          justify-content: center;
+          width: auto;
+        }
+      }
+    }
   }
 
 }
