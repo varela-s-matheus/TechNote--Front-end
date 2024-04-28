@@ -3,7 +3,7 @@
 ## Sobre o Projeto
 
 <p>Front-end de uma aplicação Web para criação, atualização e manipulação de notas informativas, para ser utilizado como mural de ideias e criação de tarefas a serem feitas. 
-  Forma de visualizar pensamentos e conceitos sobre determinados assuntos e lista de afazeres</p>
+  Forma de visualizar pensamentos e conceitos sobre determinados assuntos e lista de afazeres.</p>
 
 ### Progresso do projeto : 90%
 
