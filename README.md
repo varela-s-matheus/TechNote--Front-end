@@ -1,21 +1,33 @@
-# Front-end da Aplicação MVC de Notas Informativas - TechNote
+# Front-end da Aplicação TechNote - Notas Informativas
 
-<p>Bem-vindo ao README do front-end da nossa aplicação de notas informativas! 
-  Neste documento, você encontrará uma visão geral do front-end, incluindo suas tecnologias utilizadas.
-  O Back-end da desta aplicação se encontra <a href="https://github.com/varela-s-matheus/TechNote--Back-end">aqui</a>, junto ao passo a passo para conexão com o Banco de dados PostgreSQL, caso queira verificar, 
-</p>
-  
-## Visão Geral
+## Sobre o Projeto
 
-<p>Front-end de uma aplicação Web para criação, atualização e manipulação de notas informativas, para ser utilizado como mural de ideias. 
-  Forma de visualizar pensamentos e conceitos sobre determinados assuntos.</p>
+<p>Front-end de uma aplicação Web para criação, atualização e manipulação de notas informativas, para ser utilizado como mural de ideias e criação de tarefas a serem feitas. 
+  Forma de visualizar pensamentos e conceitos sobre determinados assuntos e lista de afazeres</p>
 
-## Project progress: 95%
+### Progresso do projeto : 90%
 
 ### Próximos passos:
-  1. Implementar função de tarefa realizada;
-  2. Realizar Code review;
-  3. Verificar implementação de testes unitários;
+  1. Realizar Code review;
+  2. Verificar implementação de testes unitários;
+
+## Imagens 
+### Sobre
+<img align="center" src="https://github.com/varela-s-matheus/TechNote--Front-end/assets/131572994/8f64ed74-ae67-4ff8-bf45-18da65837a84" alt="Tela sobre da aplicação TechNote"/>
+
+### Inicial
+<img align="center" src="https://github.com/varela-s-matheus/TechNote--Front-end/assets/131572994/19fa9966-8c86-4260-b284-7635ce57c7af"/>
+
+### Formulário
+<img align="center" src="https://github.com/varela-s-matheus/TechNote--Front-end/assets/131572994/26da2bc0-e826-4b73-b500-bcaa09c63861"/>
+
+### Notes
+<img align="center" src="https://github.com/varela-s-matheus/TechNote--Front-end/assets/131572994/952681d0-29f2-4fd6-935e-1e0835d41754"/>
+
+
+## Tecnologias Utilizadas
+Este projeto foi criado utilizando framework Angular, TypeScript, SCSS, HTML e Angular Material.
+
 <br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
 
@@ -42,3 +54,21 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Integrações
+
+Projeto se comunica com o Back-end através da API rest, endereço padrão: "http://localhost:8080/notes" 
+
+
+<a href="https://github.com/varela-s-matheus/TechNote--Back-end" target="_blank">Acessar Back-end desta aplicação</a>
+
+
+## Contatos
+
+<a href="https://linkedin.com/in/varela-s-matheus" target="_blank">
+  <img align="center" src="https://img.shields.io/badge/-MatheusVarela-05122A?style=flat&logo=linkedin" alt="linkedin"/>
+</a>
+<a href="https://www.instagram.com/varela_matheuus/" target="_blank">
+ <img align="center" src="https://img.shields.io/badge/-MatheusVarela-05122A?style=flat&logo=instagram" alt="instagram"/>
+</a>
